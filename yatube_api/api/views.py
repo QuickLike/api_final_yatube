@@ -3,7 +3,9 @@ from rest_framework import filters, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 
-from .serializers import PostSerializer, GroupSerializer, CommentSerializer, FollowSerializer
+from .serializers import (
+    PostSerializer, GroupSerializer, CommentSerializer, FollowSerializer
+)
 from .permissions import IsAuthorOrReadOnly
 from posts.models import Group, Post
 
